@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
     "start": "nodemon -L",
     "test": "mocha -w ./tests/**/*.spec.js"
   },
@@ -14,6 +15,8 @@
     "npm": ">=6.14.6"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "babel": "^6.23.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -22,14 +25,18 @@
     "ioredis": "^4.19.2",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "supertest-session": "^4.1.0",
-    "mocha": "^8.2.1",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
     "chai": "^4.2.0",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.6",
-    "supertest": "^6.0.1"
+    "supertest": "^6.0.1",
+    "supertest-session": "^4.1.0"
   }
 }
