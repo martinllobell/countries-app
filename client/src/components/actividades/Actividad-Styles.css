@@ -1,0 +1,218 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+}
+.titulaso{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.texti{
+    font-size: 30px;
+}
+.formu{
+    color: black;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #14356d4f;
+    
+}
+.formular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dificultad {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(199, 200, 200);
+    width: 150px;
+    height: 40px;
+    padding: 7px;
+    margin: 30px;
+    background-color: rgba(4, 24, 41, 0.479);
+
+    
+}
+.temporada {
+    display: flex;
+    align-items: center;
+    color: rgb(199, 200, 200);
+    width: 150px;
+    height: 40px;
+    padding: 7px;
+    margin: 30px;
+    background-color: rgba(4, 24, 41, 0.479);
+}
+.duracion {
+    display: flex;
+    align-items: center;
+    color: rgb(199, 200, 200);
+    width: 150px;
+    height: 40px;
+    padding: 7px;
+    margin: 30px;
+    background-color: rgba(4, 24, 41, 0.479);
+}
+
+.inputText{
+    opacity: 0.5;
+    background-color: rgba(63, 102, 138, 0.459);
+    outline:none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    display: inline;
+    width: 400px;
+    height: 23px;
+    padding: 10px;
+    
+}
+.inputText::placeholder{
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+
+}
+.inputText:hover{
+    transition: 0.3s;
+    box-shadow: 0 0px 10px 0 rgba(127, 204, 218, 0.712)
+
+}
+.selectore{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.boton{
+    font-size:15px;
+    font-family:Verdana,Helvetica;
+    color:rgb(255, 255, 255);
+    background:#638cb59f;
+    box-shadow: 0 0 2px black;
+    border:0px;
+    width:80px;
+    margin-top: 10;
+    border-radius: 8px;
+    height:40px;
+}
+.boton:hover{
+    transition: 0.2s;
+    color: rgba(0, 0, 0, 0.514);    
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    background-color: rgba(0, 246, 226, 0.733);
+}
+.volveratras{
+    font-size:15px;
+    font-family:Verdana,Helvetica;
+    color:rgb(255, 255, 255);
+    border:3px solid rgba(10, 81, 129, 0.472);
+    background-color: rgba(20, 84, 100, 0.561);
+    border-radius: 50px;
+    width:60px;
+    height:60px;
+}
+.volveratras:hover{
+    transition: 0.3s;
+    border: 4px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 0 0 6px red;
+    background-color: rgba(255, 0, 0, 0.698);
+}
+/* ACTIVIDADES CREADAS */
+.ActividadContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+.cardActividad{
+    grid-template-columns: 3fr;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 50px;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #2f146d4f;
+    width: 900px;
+    height: 300px;
+}
+.dataAct{
+    display: flex;
+    padding: 30px;
+    height: 285px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px black;
+    background-color: #2f146d00;
+    margin-bottom: 10px;
+}
+.detailsAct{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+.ee{
+    padding: 10px;
+}
+/* UN SOLO PAIS */
+.dataCountry{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+/* VARIOS PAISES */
+.dataCountryVarios{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+.iimg{
+    border: 2px solid white;
+    width: 200px;
+    border: 2px solid rgba(9, 29, 66, 0.349);
+    box-shadow: 0px 10px 30px black;
+}
+.iimg:hover{
+    transition: 0.6s;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    box-shadow: 0 1px 30px rgba(46, 206, 255, 0.76);
+}
+.cardActividadVarios{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 50px;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #021b314d;
+    width: 900px;
+    height: 300px;
+}

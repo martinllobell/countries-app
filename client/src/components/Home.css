@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-.containerr {
-    display: flex;
-    width: 1900px;
-    height: 150px;
-    background-image: url('../assets/background.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 0 750px 0;
-    background-color: black;
-    margin-bottom: 20px;
-    font-family: Raleway;
+body{
+    background-image: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg') ;
 }
+.containerr {
+    margin: 0;
+    display: flex;
+    width: 1870px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 20px 740px 0px;
+}
+
 .titlee{
     display: flex;
     margin-top: 80px;
@@ -19,19 +21,21 @@
     font-size: 60px;
 }
 .btn {
-    position: relative;
     margin-top: 500px;
-    padding: 2%;
+    padding: 7%;
     border: none;
+    width: 150px;
+    height: 60px;
     border-radius: 10px 10px 10px 10px;
     background-color: rgba(26, 59, 112, 0.712);
     cursor: pointer;
     outline: none;
-    font-size: 18px;
-    transition: 0,5s all ease;
+    font-size: 15px;
+    
     
 }
-.btn:hover{    
-    background-color: rgba(50, 93, 129, 0.719);
-
+.btn:hover{ 
+    color: rgb(0, 17, 255);
+    background-color: rgba(30, 193, 214, 0.719);
+    transition: 0.3s; 
 }

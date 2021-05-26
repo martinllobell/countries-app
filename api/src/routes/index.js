@@ -4,6 +4,10 @@ const {countriesbyid}= require('./byID')
 const {countriesbyname} = require('./byName')
 const {tourinf} = require('./postTour')
 const {next10} = require('./nextTenCountries')
+const {countriesbyalphabetic} = require('./byAlphabetical')
+const {countriesbypoblation}= require('./byPoblation')
+const {countriesbyregion}= require('./byContinente')
+const {activities} = require('./getTour')
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 
@@ -17,6 +21,12 @@ router.use('/', countries);
 router.use('/', countriesbyname);
 router.use('/', countriesbyid);
 router.use('/', tourinf);
+router.use('/', countriesbyalphabetic);
+router.use('/', countriesbypoblation);
+router.use('/', countriesbyregion);
+router.use('/', activities);
+
+
 
 
 

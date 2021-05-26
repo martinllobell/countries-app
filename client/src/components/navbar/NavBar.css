@@ -3,10 +3,35 @@
     text-decoration: none;
     color:seashell;
 }
+.title{
+  background-size: cover;
+  background-position: center;
+  background-size: 120px;
+  width: 200px;
+  height: 250px;
+  background-color: linear-gradient(#1b58c277, #19202755);
+  background-image: url('../../assets/mundoo.png');
+  background-repeat:no-repeat ;
+}
+.linkk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  padding: 0;
+  width: 200px;
+  height: 250px;
+  background-color: none;
+}
+.linkk:hover{
+  transition: 0.1s;
+  padding: 10px;
+}
 
 .header {
     display: flex;
-    background: linear-gradient(#3a4f72, #192027);
+    background: linear-gradient(#1b58c277, #19202755);
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -14,42 +39,40 @@
     margin-bottom: 30px;
     width: 97.9%;
     border-radius:10px 10px;
+    backdrop-filter: blur(2px);
 }
 
-
-.selectors {
-  border: none;
-  outline: none;
-  background-color: var(--color-bg-secondary);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  padding: 20px 0;
-  border-radius: 0.400rem;
-  opacity: 0.5;
-  letter-spacing: 1px;
-}
 
 .form-search {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  padding: 1rem;
-  background-color: var(--color-bg-secondary);
+  /* padding: 4px; */
+  background-color: #13202e;
   border-radius: 0.375rem;
   border: 1px solid rgba(31, 30, 30, 0.678);
-  width: 80%;
+
+}
+.form-search:hover{
+  transition: 0.3s;
+  box-shadow: 0 0px 10px 0 rgba(127, 204, 218, 0.712)
 }
 
-.form-search i{
+
+.fas-fa-search{
   color: var(--color-text);
   opacity: 0.5;
 }
 
-.form-search input {
+.input {
+  display: block;
   border: none;
   outline: none;
-  background-color: transparent;
+  background: none;
   margin-left: 1rem;
   color: white;
   letter-spacing: 1px;
+  padding: 10px;
 }
+
 
 /* Media Configs */
 
@@ -67,34 +90,73 @@
   }
 
 }
+.link{
+  padding: 3px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+.link:hover{
+  transition: 0.3s;
+  color: rgb(39, 243, 243);
+  font-size: 21px;
+}
+.submitbtn{
+  font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+  border: 2px solid rgba(22, 76, 121, 0.479);
+  background-image: url('../../assets/asdasd.png');
+  background-position: center;
+  background-size: cover;
+  padding: 5px;
+  margin-left: 30px;
+  background-color: rgba(27, 133, 160, 0.301);
+  width: 60px;
+  height: 60px;
+  border-radius:60px;
+}
+.submitbtn:hover{
+  transition: 0.1s;
+  border: 4px solid rgba(0, 255, 234, 0.623);
+  color: #151920;
+  box-shadow: 0 0 20px rgb(2, 250, 217);
+  background-color: rgba(0, 255, 255, 0.753);
+}
 @media (max-width: 1000px) {
-  body {
+  /* body {
     padding: 25px 50px 5px 5px;
-  }
+  } */
   .form-search{
     width: 650px;
   }
   .form-search input {
     width: 300px;
   }
+  .link{
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
-  body {
+  /* body {
     padding: 20px 40px 0px 0px;
-  }
+  } */
   .form-search{
     width: 500px;
   }
   .form-search input {
     width: 200px;
   }
+  .link{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-  body {
+  /* body {
     padding: 20px 30px 0px 0px;
-  }
+  } */
   .header{
     padding: 20px 30px;
   }
@@ -104,4 +166,8 @@
   .form-search input {
     width: 100px;
   }
+  .link{
+    display: none;
+  }
 }
+

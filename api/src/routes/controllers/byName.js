@@ -17,6 +17,7 @@ function llamarPorNombre(req, res){
         if(!c[0]){
             res.send(404, ('No hay coincidencias'))
         }else{
+            console.log(c);
             res.send(c)
         }
     })

@@ -1,62 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;400&display=swap');
 
-*{
-    margin: 0;
-    padding: 0%;
-  }
-.country {
-    padding: 100px 0px 0 0;
+
+.country{
     display: flex;
-    flex-direction: row-reverse;
-    font-family: 'Noto Sans SC', sans-serif;
+    padding: 80px;
+    width: 1000px;
+    height: 400px;
+    background-color: #14356d5e;
+    margin-left: 16%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+}
+.texxt{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
     justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding-left: 20px;
+    background-color: none;
 }
 .fa{
-    display: flex;
-    font-size: 70px;
+    font-size: 60px;
 }
-.fo {
-    display: flex;
-    font-size: 25px;
-    font-family: 'Noto Sans SC', sans-serif;
-    letter-spacing: 1px;
-    justify-content: space-around;
-    padding: 15px 0 1px 10px;
-
+.fo{
+    letter-spacing: 1.5px;
+    font-size: 20px;
 }
-.fo span {
-    display: flex;
-    padding: 0 0 0 30px ;
-    
+.fi{
+    padding-left: 15px;
+    font-style:inherit;
+    font-size: 18px;
+}
+.volver{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    color:rgb(255, 255, 255);
+    background:#2b5668e3;
+    border: 1px solid rgba(38, 72, 128, 0.65);
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.volver:hover{
+    transition: 0.2s;
+    border: 1px solid red;
+    background-color: rgba(192, 11, 87, 0.698);
 }
 
 
 .img{
-    padding: 0px 0px 0 150px;
-    width: 500px;
-    border-radius: 0 0 0 0;
+    width:400px;
+    border: 5px solid rgba(9, 29, 66, 0.349);
+    box-shadow: 0px 10px 30px black;
+    border-radius: 0px 0px 0px 0px;
 }
-body{
-    padding: 10px 0px;
+.img:hover{
+    transition: 0.6s;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    box-shadow: 0 1px 30px rgba(46, 206, 255, 0.76);
 }
-
-/* ...Media Settings... */
-
-@media (max-width: 800px) {
-    .country {
-        flex-direction:column;
-        justify-content: center;
-        padding: 50px 0px 0 0;
-        align-items: center;
-        margin-right: 120px;
-    }
-    .text {
-        margin-left: 180px;
-        padding: 10px;
-    }
-    .fa {
-        margin-left: 60px;
-    }
-}
-
-

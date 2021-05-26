@@ -5,7 +5,6 @@ var nextValue = 10 // suma 10 posiciones al valor incial
 
 
 function traerLosSiguientes(req, res, next){
-    console.log('FASOSSASAS')
     initialValue = initialValue + 10;
     nextValue = nextValue + 10
         Country.findAll().then((s)=>{

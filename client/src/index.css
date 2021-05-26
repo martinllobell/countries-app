@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
 
 
-*{
-  margin: 0;
-  padding: 0;
+/* *{
+  margin: 0px;
+  padding: 0px;
 }
+img{
 
+}
+ */
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'KoHo', sans-serif;
   background-color: #223b4d;
 }

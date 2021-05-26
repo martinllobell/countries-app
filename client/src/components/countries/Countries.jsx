@@ -1,42 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { AllCountriesMap, GetOneCountry, NextCountriesMap, PreviousCountriesMap } from './Countries-Controller';
-import { fetchCountries, getCountriesNext, getCountriesPrevious, getOneCountry  } from '../../store/redux/actions/actions';
+import { AllCountriesMap, NextCountriesMap, PreviousCountriesMap } from './Countries-Controller';
+import { fetchCountries, getCountriesNext, getCountriesPrevious, setVerify } from '../../store/redux/actions/actions';
+import CountriesFounded from '../founded/CountriesFounded';
 import './Countries-styles.css';
 
-
-
-
-
-
 export default function Countries(){
-
     
-
-    const [verify, setVerify] = useState('')
-
+    const verify = useSelector(state=> state.verify)
+    const countriesfounded = useSelector(state => state.countriesfounded)
     const countries = useSelector(state=> state.countries)
     const countriesnext = useSelector(state=> state.countriesnext)
     const countriesprevious = useSelector(state=> state.countriesprevious)
     const dispatch = useDispatch()
 
-
-
     useEffect(async ()=>{        
         await dispatch(fetchCountries());
-    }, []);
-
-    
+    }, []);    
 
     async function getnext() {
        await dispatch(getCountriesNext())
-        setVerify('getnext')
+        await dispatch(setVerify('getnext'))
     }
     async function getprevious() {
         await dispatch(getCountriesPrevious())
-        setVerify('getprevious')
+        await dispatch(setVerify('getprevious'))
     }
-
+    
     function caseSwicth(verify){
         switch(verify){
             case 'getnext':{
@@ -45,18 +35,20 @@ export default function Countries(){
             case 'getprevious':{
                 return PreviousCountriesMap(countriesprevious)
             }
+            case 'searchcountry':{
+                return <CountriesFounded nameC={countriesfounded}/>
+            }
             default:
                 return AllCountriesMap(countries)
         }
     }
-
     return (
         <>
         <div className='buttonsNP'>
             <button onClick={getprevious} className='back'>Anterior</button>
             <button onClick={getnext} className='next'>Siguiente</button>
         </div>
-        <div className="cont">
+        <div className='cont'>
                 {
                 caseSwicth(verify)            
                 }

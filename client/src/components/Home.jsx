@@ -6,10 +6,10 @@ export default function Home() {
     return (
         <div className='containerr'>
             <h1 className='titlee'>My Countries App!</h1>
+                <Link to='/countries'>
+                   <button className='btn'>Ver Países...</button>
+                </Link>
             
-            <button className='btn'>
-                <Link to='/countries'>Ver Países...</Link>
-            </button>
         </div>
     )
 }

@@ -36,8 +36,8 @@ const { Country, Tourinf } = sequelize.models;
 // Product.hasMany(Reviews);
 // Country.hasOne(Flags);
 // Flags.belongsTo(Country)
-Country.belongsToMany(Tourinf, {through: 'countrie_tour'})
-Tourinf.belongsToMany(Country, {through: 'countrie_tour'})
+Country.belongsToMany(Tourinf, {through: 'countrie_tour', foreignKey: 'countries_key'})
+Tourinf.belongsToMany(Country, {through: 'countrie_tour', foreignKey: 'tours_key'})
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
