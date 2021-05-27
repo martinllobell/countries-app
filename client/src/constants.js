@@ -1,4 +1,3 @@
-
 //Constantes de Actions...
 const GET_10_COUNTRIES = 'GET_10_COUNTRIES';
 const GET_10_NEXT = 'GET_10_NEXT';
@@ -13,7 +12,7 @@ const GET_ALPHABETIC_DES = 'GET_ALPHABETIC_DES';
 const GET_POBLATION_ASC = 'GET_POBLATION_ASC';
 const GET_POBLATION_DES = 'GET_POBLATION_DES';
 const GET_ACTIVIDAD_TYPE = 'GET_ACTIVIDAD_TYPE';
-const GET_BY_CONTINENT = 'GET_BY_CONTINENT'
+const GET_BY_CONTINENT = 'GET_BY_CONTINENT';
 
 
 //Constantes de URL...
@@ -27,6 +26,7 @@ const URL_POB_ASC = 'http://localhost:3001/poblation/ascendente';
 const URL_POB_DES = 'http://localhost:3001/poblation/descendente';
 const URL_BY_CONTINENT = 'http://localhost:3001/region/';
 const URL_GET_ACTIVITY = 'http://localhost:3001/activityget';
+const URL_SET_COUNTRIES_TO_DATA_BASE = 'http://localhost:3001/setdatabase'
 
 
 module.exports = {
@@ -53,6 +53,7 @@ module.exports = {
     URL_POB_DES,
     GET_BY_CONTINENT,
     URL_BY_CONTINENT,
-    URL_GET_ACTIVITY
+    URL_GET_ACTIVITY,
+    URL_SET_COUNTRIES_TO_DATA_BASE
 
 }

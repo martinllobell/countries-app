@@ -7,6 +7,7 @@ import './Countries-styles.css';
 
 export default function Countries(){
     
+    //Acceso a estados globales...
     const verify = useSelector(state=> state.verify)
     const countriesfounded = useSelector(state => state.countriesfounded)
     const countries = useSelector(state=> state.countries)
@@ -14,10 +15,12 @@ export default function Countries(){
     const countriesprevious = useSelector(state=> state.countriesprevious)
     const dispatch = useDispatch()
 
+    //Me traigo los países a penas se monte el componente
     useEffect(async ()=>{        
         await dispatch(fetchCountries());
     }, []);    
 
+    //Funciones Next Y Previous
     async function getnext() {
        await dispatch(getCountriesNext())
         await dispatch(setVerify('getnext'))

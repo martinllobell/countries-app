@@ -133,6 +133,11 @@
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #14356d4f;
 }
 .cardActividad{
     grid-template-columns: 3fr;
@@ -146,7 +151,7 @@
     border-radius: 40px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 10px 30px black;
-    background-color: #2f146d4f;
+    background-color: #470cd118;
     width: 900px;
     height: 300px;
 }
@@ -160,7 +165,7 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 5px 20px black;
-    background-color: #2f146d00;
+    background-color: #ffffff00;
     margin-bottom: 10px;
 }
 .detailsAct{
@@ -212,7 +217,25 @@
     border-radius: 40px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 10px 30px black;
-    background-color: #021b314d;
+    background-color: #470cd118;
     width: 900px;
     height: 300px;
+}
+/* ////////////////////////////////////////////////////// */
+.cardActividadd{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 50px;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #470cd118;
+    width: 1200px;
+    height: 550px;
 }

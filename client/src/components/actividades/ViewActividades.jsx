@@ -14,7 +14,6 @@ export default function ViewActivities() {
 
    return(
        <div className="content">
-           <h1>Actividades!</h1>
            <div className='ActividadContenedor'>
                {
                    getActividad(activities)

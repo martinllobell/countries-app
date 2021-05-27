@@ -10,7 +10,7 @@
   width: 200px;
   height: 250px;
   background-color: linear-gradient(#1b58c277, #19202755);
-  background-image: url('../../assets/mundoo.png');
+  background-image: url('../../assets/TierrA-Gira.gif');
   background-repeat:no-repeat ;
 }
 .linkk{
@@ -105,13 +105,13 @@
   font-size: 15px;
   text-decoration: none;
   list-style: none;
-  border: 2px solid rgba(22, 76, 121, 0.479);
+  border: 2px solid rgba(40, 87, 131, 0.425);
   background-image: url('../../assets/asdasd.png');
   background-position: center;
   background-size: cover;
   padding: 5px;
   margin-left: 30px;
-  background-color: rgba(27, 133, 160, 0.301);
+  background-color: rgba(9, 133, 250, 0.418);
   width: 60px;
   height: 60px;
   border-radius:60px;

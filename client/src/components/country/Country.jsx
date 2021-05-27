@@ -14,7 +14,6 @@ export default function Country() {
     const dispatch = useDispatch()
 
     const {name, flag, poblation, id, continente, capital, area, subregion} = country;
-    const {countries}= activities
     useEffect(async()=>{
         await dispatch(getOneCountry(idPais))
     }, [])

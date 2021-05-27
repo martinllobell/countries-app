@@ -6,36 +6,55 @@ body{
 .containerr {
     margin: 0;
     display: flex;
-    width: 1870px;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0px 20px 740px 0px;
+    align-items: center;
+    height: 860px;
+    width: 1860px;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 30px black;
+    background-color: #470cd10a;
 }
-
 .titlee{
     display: flex;
-    margin-top: 80px;
-    margin-left: 40px;
-    font-size: 60px;
+    background: linear-gradient(to right, #105f9459, #1a488338, #06156949, #0615694d, #07197e3d, #0615693a, #1a488349, #1a488338);
+    border-radius: 40px;
+    background-size: 500%;
+    padding: 50px;
+    box-shadow: 0px 10px 30px black;
+    margin-bottom: 430px;
+    font-size: 150px;
+    animation: color 10s infinite;
+}
+
+@keyframes color {
+    from {       
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
 }
 .btn {
-    margin-top: 500px;
-    padding: 7%;
     border: none;
-    width: 150px;
-    height: 60px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: rgba(26, 59, 112, 0.712);
+    width: 160px;
+    height: 90px;
+    margin-left: 100px;
+    border-radius: 40px;
+    background: linear-gradient(to right, #105f9496, #1a4783be, #061569a2, #061569a2, #07197ed3, #0615698e, #1a4783be, #166ea8a1);
     cursor: pointer;
+    background-size: 500%;
+    box-shadow: 0px 0px 30px rgb(9, 108, 133);
     outline: none;
-    font-size: 15px;
-    
-    
+    font-size: 20px;
+    animation: color 10s infinite;     
 }
 .btn:hover{ 
-    color: rgb(0, 17, 255);
-    background-color: rgba(30, 193, 214, 0.719);
     transition: 0.3s; 
+    height: 160px;
+    border-radius: 90px;
+    border:3px solid cyan;
+    box-shadow: 0px 0px 30px rgb(0, 204, 255);
+    font-size: 24px;
 }

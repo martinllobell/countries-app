@@ -62,8 +62,8 @@ export function getActividad(activities){
                 <h1>No hay nada por aquí...</h1>
                 <h3>
                     Creá una actividad acá!
-                    <Link path to='http://localhost:3000/activity'>Click</Link>
                 </h3>
+                <Link path to='/activity'>Click</Link>
             </div>
         )
     }

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { getAlpAsc, getAlpDes, getByContinent, getPobAsc, getPobDes } from '../../store/redux/actions/actions'
-import { FilterController, FilterControllerContinent } from './Filter-Controller';
+import { FilterController, FilterControllerContinent, getActividad } from './Filter-Controller';
 import './Filter-Styles.css'
 
 
@@ -24,6 +24,7 @@ export default function Filtros() {
     const alphabeticdes = useSelector(state=> state.alphabeticdes);
     const poblationasc = useSelector(state=> state.poblationasc);
     const poblationdes = useSelector(state=> state.poblationdes);
+    const activities = useSelector(state=> state.activities);
 
     //Constantes de referencias de datos...
     const dataPoblacion = useRef(null)
@@ -64,7 +65,9 @@ export default function Filtros() {
             case 'Asia':
                 return dispatch(getByContinent('Asia'))
             case 'Oceania':
-                return dispatch(getByContinent('Oceania'))       
+                return dispatch(getByContinent('Oceania'))
+            case 'actividad':
+                return setRender(data);   
             default:
                 return data
         }
@@ -142,10 +145,10 @@ export default function Filtros() {
                 <option value="">Actividad</option>
                 <option value="Esquiar" >Esquiar</option>
                 <option value="Surfear">Surfear</option>
-                <option value="Surfear">Surfear</option>
-                <option value="Surfear">Surfear</option>
-                <option value="Surfear">Surfear</option>
-                <option value="Surfear">Surfear</option>
+                <option value="Pescar">Pescar</option>
+                <option value="Acampar">Acampar</option>
+                <option value="Visitar Ciudades">Visitar Ciudades</option>
+                <option value="Rafting">Rafting</option>
             </select>
         </div>
         )
@@ -189,6 +192,7 @@ export default function Filtros() {
                 break;
         }
     }
+    
 
     //Función switch para el renderizado de componentes filtrados...
     function SwitchComponenteFiltrados(render) {
@@ -211,6 +215,20 @@ export default function Filtros() {
                 return FilterControllerContinent(countriesbycontinent)
             case 'Americas':
                 return FilterControllerContinent(countriesbycontinent)
+            //Activities...
+            case 'Esquiar':
+                return getActividad(activities, 'Esquiar')
+            case 'Surfear':
+                return getActividad(activities, 'Surfear')
+            case 'Pescar':
+                return getActividad(activities, 'Pescar')
+            case 'Acampar':
+                return getActividad(activities, 'Acampar')
+            case 'Rafting':
+                return getActividad(activities, 'Rafting')
+            case 'Visitar Ciudades':
+                return getActividad(activities, 'Visitar Ciudades')
+
             default:
                 return FilterHome()
         }
