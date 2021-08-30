@@ -30,14 +30,15 @@
 }
 
 .header {
+  position: relative;
+  top: -1rem;
     display: flex;
     background: linear-gradient(#1b58c277, #19202755);
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    height: 70px;
-    margin-bottom: 30px;
-    width: 97.9%;
+    height: 10vh;
+    width: 100%;
     border-radius:10px 10px;
     backdrop-filter: blur(2px);
 }

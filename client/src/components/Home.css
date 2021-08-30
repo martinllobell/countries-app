@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body{
-    background-image: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg') ;
+*{
+    margin:0;
+    padding: 0;
 }
+body{
+    background: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg')
+}
+
 .containerr {
-    margin: 0;
+    position: absolute;
+    background-image: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg') ;
+    top:0;
+    left: 0;
     display: flex;
-    align-items: center;
-    height: 860px;
-    width: 1860px;
-    border: 1px solid black;
-    border-radius: 40px;
-    backdrop-filter: blur(2px);
-    box-shadow: 0px 10px 30px black;
-    background-color: #470cd10a;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;   
+    height: 100vh;
+    width: 100vw;
 }
 .titlee{
-    display: flex;
-    background: linear-gradient(to right, #105f9459, #1a488338, #06156949, #0615694d, #07197e3d, #0615693a, #1a488349, #1a488338);
-    border-radius: 40px;
-    background-size: 500%;
-    padding: 50px;
-    box-shadow: 0px 10px 30px black;
-    margin-bottom: 430px;
-    font-size: 150px;
-    animation: color 10s infinite;
+    position: absolute;
+    top: 10rem;
+    font-size: 10rem;
 }
 
 @keyframes color {
@@ -37,13 +36,15 @@ body{
     }
 }
 .btn {
+    position: relative;
+    top: 10rem;
     border: none;
-    width: 160px;
-    height: 90px;
-    margin-left: 100px;
+    width: 10vw;
+    height: 10vh;
     border-radius: 40px;
-    background: linear-gradient(to right, #105f9496, #1a4783be, #061569a2, #061569a2, #07197ed3, #0615698e, #1a4783be, #166ea8a1);
+    background: linear-gradient(to right, #105f94, #1a4883, #061569, #061569, #07197e, #061569, #1a4883, #166ea8);
     cursor: pointer;
+    letter-spacing: .2rem;
     background-size: 500%;
     box-shadow: 0px 0px 30px rgb(9, 108, 133);
     outline: none;

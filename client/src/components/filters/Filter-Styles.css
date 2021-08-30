@@ -1,13 +1,18 @@
 .contenedore{
+    position: relative;
+    left: 4rem;
     display: flex;
     flex-direction: column;
+    width: 90vw;
+    height: 70vh;
     align-items: center;
     padding: 20px;
     align-content: space-around;
     border-radius: 40px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 10px 30px black;
-    background-color: #14356d4f;
+    background: linear-gradient(#1b58c277,#19202755, #0d327277);
+
 }
 .custom-select{
     padding: 150px 0 0 0;
@@ -17,6 +22,8 @@
     align-items: center;
 }
 .selectors {
+    position: relative;
+    top: 5rem;
     text-align-last: center;
     background-color: #003795e7;
     width: 300px;
@@ -37,6 +44,8 @@
     padding-bottom: 30px;
 }
 .activadores{
+    position: relative;
+    top:8rem;
     border: none;
     color: rgb(7, 15, 22);
     background-color: rgba(55, 61, 68, 0.801);
@@ -56,15 +65,17 @@
 }
 
 .ask{
-    padding-bottom: 50px;
+    position: relative;
+    top: 3rem;
 }
 
 
 .as {
+    position: absolute;
+    bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
     width: 100px;
     height: 50px;
     font-size: 15px;
