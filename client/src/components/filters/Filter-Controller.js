@@ -79,7 +79,7 @@ export function FilterControllerContinent(countriesFiltrados){
                                 <Link path to={`/countries/${c.id}`}>
                                     <div>
                                         <h2>{c.name}</h2>
-                                        <img src={c.flag} className='img'/>
+                                        <img src={c.flag} className='imgg'/>
                                     </div>
                                 </Link>    
                                 )}

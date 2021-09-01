@@ -87,3 +87,39 @@
     border: 1px solid rgba(255, 255, 255, 0.445);
     box-shadow: 0 1px 30px rgba(46, 206, 255, 0.76);
 }
+@media (max-width: 576px){
+    .img{
+        position: relative;
+        top: 5%;
+        width: 80vw;
+    }
+    .country{
+        position: relative;
+        top: 8%;
+        width: 90vw;
+        height: 75vh;
+        border-radius: 0%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .texxt{
+        position: relative;
+        top:5vh;
+        left: 0%;
+        margin: 0;
+        height: 40vh;
+        width: 100%;
+    }
+    .fa{
+        padding: 0;
+        margin-bottom: 10%;
+        font-size:xx-large;
+
+    }
+    .fo{
+        margin:0;
+    }
+    .volver{
+        z-index: 3;
+    }
+}

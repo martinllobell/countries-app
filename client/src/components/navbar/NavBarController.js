@@ -10,7 +10,7 @@ export function onSearch(country) {
             <img src={flag} alt={name} className='img'/>                   
             <article key={id}>
                 <div className='contenedor'>
-                    <div className="text">
+                    <div className="texxt">
                         <h1 className='fa'>{name}</h1>
                         <h4 className='fo'>Capital:<span>{capital}</span></h4>
                         <h4 className='fo'>Población:<span>{poblation}</span></h4>

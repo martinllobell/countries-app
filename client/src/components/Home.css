@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-*{
+/* *{
     margin:0;
     padding: 0;
-}
+} */
 body{
     background: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg')
 }
@@ -59,3 +59,46 @@ body{
     box-shadow: 0px 0px 30px rgb(0, 204, 255);
     font-size: 24px;
 }
+
+@media (max-width: 576px) {
+
+    .titlee {
+        font-size: 10vw;
+        white-space: nowrap;
+    }
+    .btn{
+        top: 30%;
+        width:50vw;
+    }
+    .containerr{
+        background-position: top;
+    }
+  }
+  @media (max-width: 768px) {
+      
+    .titlee {
+        font-size: 10vw;
+        white-space: nowrap;
+    }
+    .btn{
+        top: 30%;
+        width:30vw;
+    }
+    .containerr{
+        background-position: top;
+    }
+
+  }
+  @media (max-width: 992px){
+    .titlee {
+        font-size: 10vw;
+        white-space: nowrap;
+    }
+    .btn{
+        top: 30%;
+        width:30vw;
+    }
+    .containerr{
+        background-position: top;
+    }
+  }

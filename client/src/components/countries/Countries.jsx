@@ -4,6 +4,7 @@ import { AllCountriesMap, NextCountriesMap, PreviousCountriesMap } from './Count
 import { fetchCountries, getCountriesNext, getCountriesPrevious, setVerify } from '../../store/redux/actions/actions';
 import CountriesFounded from '../founded/CountriesFounded';
 import './Countries-styles.css';
+import NavBar from '../navbar/NavBar';
 
 export default function Countries(){
     

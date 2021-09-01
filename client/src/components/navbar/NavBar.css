@@ -3,6 +3,13 @@
     text-decoration: none;
     color:seashell;
 }
+body{
+  z-index: -3;
+}
+
+.none{
+  display: none;
+}
 .title{
   background-size: cover;
   background-position: center;
@@ -13,7 +20,90 @@
   background-image: url('../../assets/TierrA-Gira.gif');
   background-repeat:no-repeat ;
 }
+.sidebar{
+  position: absolute;
+  left: -0%;
+  background-size: contain;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  background-color: linear-gradient(#1b58c277, #19202755);
+  background-image: url('../../assets/TierrA-Gira.gif');
+  background-repeat:no-repeat ;
+}
+.sidebar2{
+  position: absolute;
+  left: 6.5%;
+  top: 0;
+  background-size: contain;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  background-color: linear-gradient(#1b58c277, #19202755);
+  background-image: url('../../assets/TierrA-Gira.gif');
+  background-repeat:no-repeat ;
+}
+.menudeploy{
+  transition: ease-in;
+  position:absolute;
+  left: -10%;
+  top: -15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  height: 95vh;
+  background-color: #123166;
+  animation-duration: 0.2s;
+  animation-name: slidein;
+  border-radius: 0 25px 10px 0;
+  border: 1px solid rgb(104, 104, 104);
+}
+@keyframes slidein {
+  from {
+      width: 0;
+  }
+  to {
+      width: 60vw;
+  }
+}
+@keyframes slideinO {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.linkcontsidebar{
+  position: relative;
+  top: 5%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  animation-duration: 0.6s;
+  animation-name: slideinO;
+}
+.sidebarlink{
+  position: relative;
+  left: -23%;
+  width: 60vw;
+  height: 25%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  animation-duration: 0.6s;
+  animation-name: slideinO;
+  border-top: 1px solid rgba(98, 130, 139, 0.692);
+}
 .linkk{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +131,7 @@
     width: 100%;
     border-radius:10px 10px;
     backdrop-filter: blur(2px);
+    z-index: 3;
 }
 
 
@@ -154,21 +245,47 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /* body {
     padding: 20px 30px 0px 0px;
   } */
   .header{
+    position: relative;
+    width: 100%;
+    top: -1rem;
+    margin: 0;
+    padding: 0%;
+    height: 8vh;
     padding: 20px 30px;
   }
+  .linkk{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+  }
+  .submitbtn{
+    position: absolute;
+    top: 30%;
+    width: 35px;
+    height: 35px;
+    left: 70%;
+  }
   .form-search{
-    width: 300px;
+    position: absolute;
+    color: white;
+    left: 25%;
+    width: 50%;
   }
-  .form-search input {
-    width: 100px;
+  .title{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    left: 0%;
   }
+
   .link{
-    display: none;
   }
 }
-

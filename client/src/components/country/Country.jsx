@@ -34,7 +34,7 @@ export default function Country() {
                         </div>
                     </div>
                 </article> 
-                <Link path to='/countries' ><button className='volver'>Atrás</button></Link>           
+                <Link path to='/countries' className='volver' ><button className='volver'>Atrás</button></Link>           
             </div>   
         </div>
      

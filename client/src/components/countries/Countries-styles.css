@@ -5,6 +5,7 @@
   border: 2px solid rgba(255, 255, 255, 0.616);
   }
   .cont {
+    position: relative;
     display: grid;
     margin-left: 60px;
     background-color: rgba(1, 111, 255, 0.089);
@@ -120,11 +121,67 @@
 
   } 
   
-  @media (max-width: 750px) {
+  @media (max-width: 576px){
+
     .cont {
-        grid-template-columns: repeat(1, 0fr);
-        gap: 100px;
-        width: 400px;
+      position: relative;
+      left:-3%;
+      grid-template-columns: repeat(2, 45%);
+      gap: 3%;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      border-radius: 2px;
+      margin: 0;
+      padding: 0;
+      z-index: 0;
+    }
+    .card{
+      width: 35vw;
+      height: 28vh;
+      position: relative;
+      top:20%;
+      z-index: 1;
+
+    }
+    .buttonsNP{
+      position: relative;
+      top:-10px;
+      z-index: 0;
+      left: 10%;
+    }
+    .text{
+      height: 18vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .titulo{
+      padding: 0;
+      margin: 0;
+    }
+    .info{
+      margin: 1px;
+    }
+    .infosecundaria{
+      text-align: center;
+      font-size: 15px;
+    }
+    .next,
+    .back{
+      width: 30%;
+      height: 5vh;
+      opacity: .75;
+      justify-content: center;
+      text-align: left;
+      font-size: 80%;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
     }
   
+}
+body{
+  margin:0;
+  padding: 0;
 }

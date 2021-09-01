@@ -232,3 +232,114 @@
     width: 1200px;
     height: 550px;
 }
+@media (max-width: 576px){
+    .main{
+        position: absolute;
+        height: 80vh;
+        top: 20%;
+        left: 2.5%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .formu{
+        position: absolute;
+        width: 50vw;
+        left: -3%;
+        top: -5%;
+        border-radius: 0;
+    }
+    .titulaso{
+        position: relative;
+        top: -10%;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        margin: 0%;
+    }
+    .texti{
+        font-size: 1rem;
+        margin-top: 1rem;
+        white-space: nowrap;
+    }
+    .inputText{
+        width: 80vw;
+        margin: 1rem;
+    }
+    .selectore{
+        position: absolute;
+        width: 90vw;
+        bottom: 10%;
+    }
+    .boton{
+        position: relative;
+        bottom: -25%;
+    }
+    .temporada,
+    .dificultad,
+    .duracion{
+        margin: 0;
+        width: 33%;
+    }
+    .volveratras{
+        width: 40px;
+        right: 10%;
+        height: 40px;
+    }
+    .ActividadContenedor{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 20%;
+        left: 0%;
+        border-radius: 0;
+    }
+    .cardActividadVarios,
+    .cardActividadd{
+        width: 100vw;
+        height: 40vh;
+        border-radius: 0%;
+        padding: 0%;
+        flex-direction: column-reverse;
+    }
+   
+
+    .dataAct{
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(0px);
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    .iimg,
+    .imgg{
+        width: 40vw;
+    }
+    .ee{
+        padding: 0%;
+        margin: 0%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        display: flex;
+        font-size: 13px;
+        flex-direction: row;
+        margin-left: 5%;
+    }
+    .dataCountryVarios{
+        height: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

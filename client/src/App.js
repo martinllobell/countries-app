@@ -9,19 +9,20 @@ import Activdades from './components/actividades/Actividad-Main';
 import Filtros from './components/filters/Filtros';
 import FilterResults from './components/filters/Filter-Results';
 import ViewActivities from './components/actividades/ViewActividades';
+import './App.css'
 
 function App() {
   return (
       <div className="App">
 
         {/* Nav-Bar */}
-        <Route exact path='/countries/:idPais' component={NavBar}/>
-        <Route exact path='/countries' component={NavBar}/>
-        <Route exact path='/founded' component={NavBar}/>
-        <Route exact path='/activity' component={NavBar}/>
-        <Route exact path='/filtros' component={NavBar}/>
-        <Route exact path='/filtros/filtrados' component={NavBar}/>
-        <Route exact path='/activity/all' component={NavBar}/>
+        <Route exact path='/countries/:idPais' component={NavBar} className='nav'/>
+        <Route exact path='/countries' component={NavBar} className='nav'/>
+        <Route exact path='/founded' component={NavBar} className='nav'/>
+        <Route exact path='/activity' component={NavBar} className='nav'/>
+        <Route exact path='/filtros' component={NavBar} className='nav'/>
+        <Route exact path='/filtros/filtrados' component={NavBar} className='nav'/>
+        <Route exact path='/activity/all' component={NavBar} className='nav'/>
         {/* Varios */}
         <Route exact path='/' component={Home}/>
         <Route exact path='/countries' component={Countries}/>
