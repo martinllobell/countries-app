@@ -43,9 +43,22 @@
 
   .buttonsNP{
     position: relative;
-    top:-2em;
+    top:-1em;
     display: flex;
     justify-content: center;
+  }
+  .backDesactivate{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    appearance: none;
+    margin-right: 40px;
+    background-color: #192027;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.678);
+    border-radius: 4px;
+    opacity: .5;
   }
   .next {
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -104,7 +117,10 @@
   }
   @media (max-width: 1200px) {
     .cont {  
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2,50%);
+      position: absolute;
+      left: -10%;
+      width: 80vw;
     }
     .card{
       width: 300px;
@@ -113,12 +129,18 @@
   
   @media (max-width: 850px){
     .cont {  
-      grid-template-columns: repeat(1, 1fr);
-  }
-  .card{
-    width: 300px;
+      grid-template-columns: repeat(2,50%);
+      position: absolute;
+      left: -10%;
+      width: 65vw;
   }
 
+  .card{
+    position: relative;
+    width: 35vw;
+    left: -30%;
+
+  }
   } 
   
   @media (max-width: 576px){
@@ -141,6 +163,7 @@
       height: 28vh;
       position: relative;
       top:20%;
+      left: 0;
       z-index: 1;
 
     }
@@ -172,6 +195,16 @@
       width: 30%;
       height: 5vh;
       opacity: .75;
+      justify-content: center;
+      text-align: left;
+      font-size: 80%;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+    .backDesactivate{
+      width: 30%;
+      height: 5vh;
       justify-content: center;
       text-align: left;
       font-size: 80%;

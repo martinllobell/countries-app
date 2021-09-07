@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 
 export function AllCountriesMap(countries){
 
+    countries = countries.filter((e,i)=>i<10)
+
     return (
-        countries.map((country)=>{
+        countries.map((country, i)=>{
             const {name, flag, poblation, id, continente, capital} = country;
+
             return (
                 <section  className='card'>
                     <Link path to={`/countries/${id}`}>
@@ -28,6 +31,7 @@ export function AllCountriesMap(countries){
     )
 }
 export function NextCountriesMap(countriesnext){
+    console.log('AHDAUGDIUYAVHISVBDIBAUDSHASIU',countriesnext);
     
     return (
         countriesnext.map((country)=>{

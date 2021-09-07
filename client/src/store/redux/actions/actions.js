@@ -15,9 +15,9 @@ export function fetchCountries(){
         })
     }
 }
-export function getCountriesNext(){
+export function getCountriesNext(initialValue){
     return function(dispatch){
-        return fetch(URL_NEXT).then((d)=> d.json())
+        return fetch(`${URL_NEXT}/${initialValue}`).then((d)=> d.json())
         .then((country)=>{
             dispatch({
                 type: GET_10_NEXT,
@@ -26,9 +26,9 @@ export function getCountriesNext(){
         })
     }
 }
-export function getCountriesPrevious(){
+export function getCountriesPrevious(initialValue){
     return function(dispatch){
-        return fetch(URL_PREVIOUS).then((d)=> d.json())
+        return fetch(`${URL_PREVIOUS}/${initialValue}`).then((d)=> d.json())
         .then((country)=>{
             dispatch({
                 type: GET_10_PREVIOUS,

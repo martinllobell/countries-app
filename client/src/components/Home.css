@@ -7,6 +7,15 @@
 body{
     background: url('https://www.wallpapertip.com/wmimgs/1-15799_8211-earth-from-space-space-wallpaper-4k-wallpaper.jpg')
 }
+body::-webkit-scrollbar{
+    background-color: rgb(36, 53, 109);
+    width: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(14, 60, 146);
+    border-radius: 20px;
+    width: 10px;
+}
 
 .containerr {
     position: absolute;

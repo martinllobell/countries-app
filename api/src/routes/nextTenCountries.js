@@ -3,8 +3,8 @@ const {traerLosSiguientes, traerLosAnteriores} = require('./controllers/controll
 
 const next10 = Router();
 
-next10.get('/countries/next', traerLosSiguientes );
-next10.get('/countries/previous', traerLosAnteriores );
+next10.get('/countries/next/:initialValue', traerLosSiguientes );
+next10.get('/countries/previous/:initialValue', traerLosSiguientes );
 
 module.exports = {
     next10

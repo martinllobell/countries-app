@@ -235,13 +235,17 @@ body{
     padding: 20px 40px 0px 0px;
   } */
   .form-search{
-    width: 500px;
+    position: relative;
+    width: 50vw;
   }
   .form-search input {
-    width: 200px;
+    width: 30vw;
   }
   .link{
     display: none;
+  }
+  .sidebar{
+    left: 2%;
   }
 }
 
