@@ -1,3 +1,11 @@
+// import dotenv from 'dotenv'
+// dotenv.config();
+// // import REACT_APP_API from process.env
+// const {
+//     REACT_APP_API
+//   } = process.env;
+
+
 //Constantes de Actions...
 const GET_10_COUNTRIES = 'GET_10_COUNTRIES';
 const GET_10_NEXT = 'GET_10_NEXT';
@@ -16,8 +24,9 @@ const GET_BY_CONTINENT = 'GET_BY_CONTINENT';
 
 
 //Constantes de URL...
-const URL_ALL = 'http://localhost:3001/countries';
-const URL_TOUR = 'http://localhost:3001/activity';
+const BASE_URL = process.env.REACT_APP_API || 'http://localhost:3001';
+const URL_ALL = `${BASE_URL}/countries`;
+const URL_TOUR = `${BASE_URL}/activity`;
 const URL_NEXT = URL_ALL + '/next';
 const URL_PREVIOUS = URL_ALL + '/previous';
 const URL_ALP_ASC = URL_ALL;
