@@ -19,22 +19,22 @@ export default function Country() {
     }, [])
     return (
         <div className="contdetail">
-            <div className="country"> 
-                <img src={flag} alt={name} className='img'/>                   
-                <article key={id}>
-                    <div className='contenedor'>
-                        <div className="texxt">
-                            <h1 className='fa'>{name}</h1>
-                            <h4 className='fo'>Capital:<span className='fi'>{capital}</span></h4>
-                            <h4 className='fo'>Población:<span className='fi'>{poblation}</span></h4>
-                            <h4 className='fo'>Continente:<span className='fi'>{continente}</span></h4>
-                            <h4 className='fo'>Área:<span className='fi'>{area}</span></h4>
-                            <h4 className='fo'>Subregión:<span className='fi'>{subregion}</span></h4>
-                            <Link path to='/activity/all' className='linkAct'><h4 className='link'>Actividades...</h4></Link>
-                        </div>
+            <div className="country">
+                <div className="contimg">
+                    <h1 className='fa'>{name}</h1>
+                    <img src={flag} alt={name} className='img'/>                   
+                </div>
+                <article key={id} className='contenedor'>
+                    <div className="texxt">
+                        <h4 className='fo'>Capital:<span className='fi'>{capital}</span></h4>
+                        <h4 className='fo'>Población:<span className='fi'>{poblation}</span></h4>
+                        <h4 className='fo'>Continente:<span className='fi'>{continente}</span></h4>
+                        <h4 className='fo'>Área:<span className='fi'>{area}</span></h4>
+                        <h4 className='fo'>Subregión:<span className='fi'>{subregion}</span></h4>
+                        <Link path to='/activity/all' className='linkAct'><h4 className='link'>Actividades...</h4></Link>
                     </div>
                 </article> 
-                <Link path to='/countries' className='volver' ><button className='volver'>Atrás</button></Link>           
+                <Link path to='/countries' className='volver' >Atrás</Link>           
             </div>   
         </div>
      

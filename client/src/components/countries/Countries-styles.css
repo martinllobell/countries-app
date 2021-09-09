@@ -158,6 +158,10 @@
       padding: 0;
       z-index: 0;
     }
+    .image{
+      
+      max-height: 10vh;
+    }
     .card{
       width: 35vw;
       height: 28vh;
