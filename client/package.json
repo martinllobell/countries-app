@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.2.2",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "form-data": "^2.3.3",
     "qs": "^6.5.2",
     "react": "^17.0.1",
