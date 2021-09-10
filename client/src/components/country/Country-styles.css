@@ -11,6 +11,50 @@
     height: 100vh;
     z-index: 0;
 }
+.volverGrande{
+    position: absolute;
+    font-size:1.3rem;
+    font-family:Verdana,Helvetica;
+    color:rgb(255, 255, 255);
+    background:#2b5668e3;
+    border: 1px solid rgba(38, 72, 128, 0.65);
+    width:5%;
+    height:5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    top: 0%;
+    border-radius: 10px;
+}
+.volverGrande:hover{
+    transition: 0.2s;
+    border: 1px solid red;
+    background-color: rgba(192, 11, 87, 0.698);
+}
+.volverSearch{
+    position: absolute;
+    font-size:1.3rem;
+    font-family:Verdana,Helvetica;
+    color:rgb(255, 255, 255);
+    background:#2b5668e3;
+    border: 1px solid rgba(38, 72, 128, 0.65);
+    width:5%;
+    height:5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20%;
+    top: 30%;
+    border-radius: 10px;
+}
+.volverSearch:hover{
+    transition: 0.2s;
+    border: 1px solid red;
+    background-color: rgba(192, 11, 87, 0.698);
+}
 .country{
     position: relative;
     top: 5%;
@@ -58,7 +102,7 @@
     position: absolute;
     text-align: center;
     font-size: 60px;
-    top: -5%;
+    top: 0%;
 }
 .fo{
     letter-spacing: 1.5px;
@@ -128,6 +172,15 @@
         position: relative;
         top: 10%;
         width: 100%;
+    }
+    .volverSearch{
+        width: 20%;
+        right: 2%;
+        top:25%
+    }
+    .volverGrande{
+        height: 2%;
+        width: 20%;
     }
     .country{
         position: relative;

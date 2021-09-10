@@ -39,8 +39,8 @@ export default function NavBar() {
                     <ul className='linkcontsidebar'>
                         <Link path to='/countries' className='sidebarlink'>Inicio</Link>
                         <Link path to='/filtros' className='sidebarlink'>Filtrar Resultados</Link>
-                        <Link path to='/activity' className='sidebarlink'>Crear Actividad</Link>
-                        <Link path to='/activity/all' className='sidebarlink'>Ver Actividades</Link>
+                        <div path to='/activity' className='sidebarlinkDes'>Crear Actividad</div>
+                        <div path to='/activity/all' className='sidebarlinkDes'>Ver Actividades</div>
                     </ul>
                </section>
            </div>
@@ -50,8 +50,8 @@ export default function NavBar() {
             </form>
             <button type='submit' className='submitbtn' onClick={SearchCountries}></button>
             <Link path to='/filtros' className='link'>Filtrar Resultados</Link>
-            <Link path to='/activity' className='link'>Crear Actividad</Link>
-            <Link path to='/activity/all' className='link'>Ver Actividades</Link>
+            <div path to='/activity' className='linkDes'>Crear Actividad</div>
+            <div path to='/activity/all' className='linkDes'>Ver Actividades</div>
         </div>
     )
 

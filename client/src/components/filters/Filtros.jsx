@@ -162,7 +162,7 @@ export default function Filtros() {
                     <button onClick={porContinente} className='activadores'><h3 className='tes'>Por continentes</h3></button>
                     <button onClick={porPoblacion} className='activadores'><h3 className='tes'>Por población</h3></button>
                     <button onClick={porAlfabeto} className='activadores'><h3 className='tes'>Por orden alfabético</h3></button>
-                    <button onClick={porActividad} className='activadores'><h3 className='tes'>Por actividades</h3></button>
+                    <button onClick={()=>{alert('Opción deshabilitada por mantenimiento')}} className='activadores'><h3 className='tes'>Por actividades</h3></button>
                 </div>
                 <div class="custom-select">
                     {

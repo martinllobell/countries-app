@@ -1,7 +1,7 @@
 const {Tourinf, Country} = require('../../db');
 
 var id = 1
-async function crearActividad(req, res){
+async function crearActividad(req, res, next){
     id = id * 2
     const {name, dificultad, duracion, temporada, pais} = req.body
     if(name.length !== 0){
@@ -15,8 +15,6 @@ async function crearActividad(req, res){
             })
             paiss.push(countryy)
         }
-
-        console.log('AAAAAAAAAAAAAAAAAAAAAA',paiss);
         
         const actividad = await Tourinf.create({
                 id: id,        
@@ -27,6 +25,8 @@ async function crearActividad(req, res){
         })
         actividad.addCountry(paiss);
         res.send('Creado!')
+    }else{
+        res.send('error')
     }
 }
 

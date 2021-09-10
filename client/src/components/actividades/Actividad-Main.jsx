@@ -16,7 +16,6 @@ export default function Activdades() {
     //useDispatch y useSelector...
     const setactivities = useSelector(state=> state.setactivities);
     const dispatch = useDispatch();
-    console.log(setactivities);
 
     //Creo un Estado local...
     const [actividad, setActividad] = useState({
@@ -34,7 +33,6 @@ export default function Activdades() {
     }        
     //Funcion despachadora...
     useEffect(async()=>{{
-        console.log('PAISSSSSSSSSSSSSSAAAAAAAAAAAAAAAA', actividad.pais);
         await dispatch(setActivity(actividad))
         }
     }, [actividad])

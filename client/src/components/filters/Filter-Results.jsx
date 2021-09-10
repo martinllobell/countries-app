@@ -11,12 +11,10 @@ export default function FilterResults() {
     const alphabeticdes = useSelector(state=> state.alphabeticdes);
     const poblationasc = useSelector(state=> state.poblationasc);
     const poblationdes = useSelector(state=> state.poblationdes);
-    useEffect(()=>{
-        console.log('FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',alphabeticas);
-    }, [])
+
     
     return(
-        <div className="fasd">
+        <div className="cont">
             {
                 FilterController(alphabeticas)
             }

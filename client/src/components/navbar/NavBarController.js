@@ -6,22 +6,24 @@ export function onSearch(country) {
     if(country.length === 1){
         const {name, flag, poblation, id, continente, capital, area, subregion} = country[0];
         return (
-            <div className="country"> 
-            <img src={flag} alt={name} className='img'/>                   
-            <article key={id}>
-                <div className='contenedor'>
-                    <div className="texxt">
+            <div className="contdetail">
+                <div className="country">
+                    <div className="contimg">
                         <h1 className='fa'>{name}</h1>
-                        <h4 className='fo'>Capital:<span>{capital}</span></h4>
-                        <h4 className='fo'>Población:<span>{poblation}</span></h4>
-                        <h4 className='fo'>Continente:<span>{continente}</span></h4>
-                        <h4 className='fo'>Área:<span>{area}</span></h4>
-                        <h4 className='fo'>Subregión:<span>{subregion}</span></h4>
+                        <img src={flag} alt={name} className='img'/>                   
                     </div>
-                </div>
-            </article> 
-            <Link path to='/countries' ><button className='volver'>Atrás</button></Link>           
-        </div>
+                    <article key={id} className='contenedor'>
+                        <div className="texxt">
+                            <h4 className='fo'>Capital:<span className='fi'>{capital}</span></h4>
+                            <h4 className='fo'>Población:<span className='fi'>{poblation}</span></h4>
+                            <h4 className='fo'>Continente:<span className='fi'>{continente}</span></h4>
+                            <h4 className='fo'>Área:<span className='fi'>{area}</span></h4>
+                            <h4 className='fo'>Subregión:<span className='fi'>{subregion}</span></h4>
+                            <Link path to='/activity/all' className='linkAct'><h4 className='link'>Actividades...</h4></Link>
+                        </div>
+                    </article> 
+                </div>   
+            </div>
         )
     }else if(country.length > 1){
         return (

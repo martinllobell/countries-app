@@ -59,11 +59,11 @@ export default function Countries(){
     }
     return (
         <>
-        <div className='buttonsNP'>
+        <div className={verify=='searchcountry'?'none':'buttonsNP'}>
             <button onClick={initialValue==0?null:getprevious} className={initialValue==0?'backDesactivate':'back'}>Anterior</button>
             <button onClick={getnext} className='next'>Siguiente</button>
         </div>
-        <div className='cont'>
+        <div className={verify=='searchcountry'?'':'cont'}>
                 {
                 caseSwicth(verify)            
                 }

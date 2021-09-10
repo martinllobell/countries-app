@@ -102,6 +102,22 @@ body{
   animation-name: slideinO;
   border-top: 1px solid rgba(98, 130, 139, 0.692);
 }
+.sidebarlinkDes{
+  position: relative;
+  left: -23%;
+  width: 60vw;
+  height: 25%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  animation-duration: 0.6s;
+  animation-name: slideinO;
+  border-top: 1px solid rgba(98, 130, 139, 0.692);
+  opacity: .5;
+
+}
 .linkk{
   position: relative;
   display: flex;
@@ -182,11 +198,29 @@ body{
   }
 
 }
+.linkDes{
+  padding: 3px;
+  display: flex;
+  font-size: 20px;
+  cursor: default;
+  justify-content: center;
+  opacity: .7;
+}
 .link{
   padding: 3px;
   display: flex;
   font-size: 20px;
   justify-content: center;
+}
+.linkDes:hover::before{
+  content: 'En mantenimiento';
+  color:white;
+  position: absolute;
+  top:15%;
+  opacity: 1;
+  white-space: nowrap;
+  transition: .3s;
+  font-size: 1rem;
 }
 .link:hover{
   transition: 0.3s;
@@ -244,6 +278,9 @@ body{
   .link{
     display: none;
   }
+  .linkDes{
+    display: none;
+  }
   .sidebar{
     left: 2%;
   }
@@ -288,8 +325,5 @@ body{
     height: 80px;
     background-size: contain;
     left: 0%;
-  }
-
-  .link{
   }
 }
