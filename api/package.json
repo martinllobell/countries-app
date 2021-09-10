@@ -26,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.12",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5"
   },
@@ -35,7 +36,6 @@
     "@babel/preset-env": "^7.14.1",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
-    "nodemon": "^2.0.6",
     "supertest": "^6.0.1",
     "supertest-session": "^4.1.0"
   }
