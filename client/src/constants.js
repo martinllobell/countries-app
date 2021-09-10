@@ -1,9 +1,3 @@
-// import dotenv from 'dotenv'
-// dotenv.config();
-// // import REACT_APP_API from process.env
-// const {
-//     REACT_APP_API
-//   } = process.env;
 
 
 //Constantes de Actions...
@@ -30,12 +24,12 @@ const URL_TOUR = `${BASE_URL}/activity`;
 const URL_NEXT = URL_ALL + '/next';
 const URL_PREVIOUS = URL_ALL + '/previous';
 const URL_ALP_ASC = URL_ALL;
-const URL_ALP_DES = 'http://localhost:3001/alphabetic';
-const URL_POB_ASC = 'http://localhost:3001/poblation/ascendente';
-const URL_POB_DES = 'http://localhost:3001/poblation/descendente';
-const URL_BY_CONTINENT = 'http://localhost:3001/region/';
-const URL_GET_ACTIVITY = 'http://localhost:3001/activityget';
-const URL_SET_COUNTRIES_TO_DATA_BASE = 'http://localhost:3001/setdatabase'
+const URL_ALP_DES = `${BASE_URL}`+'/alphabetic';
+const URL_POB_ASC = `${BASE_URL}`+'/poblation/ascendente';
+const URL_POB_DES = `${BASE_URL}`+'/poblation/descendente';
+const URL_BY_CONTINENT = `${BASE_URL}`+'/region/';
+const URL_GET_ACTIVITY = `${BASE_URL}`+'/activityget';
+const URL_SET_COUNTRIES_TO_DATA_BASE = `${BASE_URL}`+'/setdatabase'
 
 
 module.exports = {

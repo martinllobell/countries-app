@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from './store/index'
+import dotenv from 'dotenv'
+dotenv.config();
 
 ReactDOM.render(
 <React.StrictMode>
