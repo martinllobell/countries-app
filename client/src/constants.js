@@ -17,8 +17,23 @@ const GET_ACTIVIDAD_TYPE = 'GET_ACTIVIDAD_TYPE';
 const GET_BY_CONTINENT = 'GET_BY_CONTINENT';
 
 
-//Constantes de URL...
-const BASE_URL = process.env.REACT_APP_API || 'http://localhost:3001';
+//Constantes de URL -----LOCAL------...
+// const BASE_URL = process.env.REACT_APP_API || 'http://localhost:3001';
+// const URL_ALL = `${BASE_URL}/countries`;
+// const URL_TOUR = `${BASE_URL}/activity`;
+// const URL_NEXT = URL_ALL + '/next';
+// const URL_PREVIOUS = URL_ALL + '/previous';
+// const URL_ALP_ASC = URL_ALL;
+// const URL_ALP_DES = `${BASE_URL}`+'/alphabetic';
+// const URL_POB_ASC = `${BASE_URL}`+'/poblation/ascendente';
+// const URL_POB_DES = `${BASE_URL}`+'/poblation/descendente';
+// const URL_BY_CONTINENT = `${BASE_URL}`+'/region/';
+// const URL_GET_ACTIVITY = `${BASE_URL}`+'/activityget';
+// const URL_SET_COUNTRIES_TO_DATA_BASE = `${BASE_URL}`+'/setdatabase'
+
+
+//Constantes de URL ------DEPLOY------...
+const BASE_URL = 'https://proyecto-countries.herokuapp.com';
 const URL_ALL = `${BASE_URL}/countries`;
 const URL_TOUR = `${BASE_URL}/activity`;
 const URL_NEXT = URL_ALL + '/next';
